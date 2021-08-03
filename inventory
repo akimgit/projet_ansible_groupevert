@@ -1,0 +1,9 @@
+[local]
+manager ansible_connection=local
+
+[test]
+debianv ansible_host=192.168.1.14
+debianl ansible_host=192.168.1.68
+debiana ansible_host=192.168.1.62
+
+#Ajout de la machine projet
