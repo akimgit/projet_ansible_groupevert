@@ -7,3 +7,4 @@ debianl ansible_host=192.168.1.68
 debiana ansible_host=192.168.1.62
 
 #Ajout de la machine projet
+ubuntuProjet ansible_host=192.168.1.42

@@ -1,9 +1,10 @@
 #  Démarrage environnement Ansible et projet Git Ansible
 
 
-ssh-copy-id -i chemin-vers-la-cle stagiaire@ip_machine_projet
+ssh-copy-id -i  /home/stagiaire/.ssh/id_ed25519.pub stagiaire@ip_machine_projet
 
 ansible -i inventory -m ping all
+ansible -m ping --user stagiaire -b --ask-become-pass ubuntuProjet
 
 # Creation du playbook pour initier la création du user ansible dans le server à distance
 

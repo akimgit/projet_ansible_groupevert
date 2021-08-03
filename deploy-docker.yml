@@ -1,6 +1,6 @@
 ---
 - name: PLAY prerequis outils sur infra
-  hosts: server
+  hosts: ubuntuProjet
   roles:
   - role: ansible-role-docker__3.1.2
     become: yes

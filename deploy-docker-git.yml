@@ -1,0 +1,17 @@
+---
+- name: PLAY Déploiement nginx avec Ansible
+  hosts: ubuntuProjet
+  
+  tasks:
+  
+    # Déclaration d'une task qui appelle le module git
+    - name: Utilisation du module git pour cloner le contenu du repot git
+      ansible.builtin.git:
+        repo: 'https://github.com/akimgit/projet_docker_groupevert.git' 
+        dest: /home/stagiaire/projetFinal
+
+    - name: Deploiement
+      ansible.builtin.command: docker-compose up -d
+      args:
+        chdir: /home/stagiaire/projetFinal
+...
